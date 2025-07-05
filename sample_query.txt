@@ -1,0 +1,241 @@
+leetcode-query-system/
+├── api/
+│   ├── init.py
+│   ├── main.py
+│   ├── routes/
+│   │   ├── init.py
+│   │   ├── query.py
+│   │   └── companies.py
+│   ├── services/
+│   │   ├── init.py
+│   │   ├── nlp_service.py
+│   │   ├── database_service.py
+│   │   └── cache_service.py
+│   ├── models/
+│   │   ├── init.py
+│   │   ├── request_models.py
+│   │   └── response_models.py
+│   └── utils/
+│       ├── init.py
+│       └── helpers.py
+├── db/
+│   ├── init.py
+│   ├── models.py
+│   ├── connection.py
+│   └── migrations/
+│       └── init.py
+├── data/
+│   ├── Amazon/
+│   │   ├── last1month.csv
+│   │   ├── last6months.csv
+│   │   └── last1year.csv
+│   ├── Google/
+│   ├── Microsoft/
+│   └── [other companies...]
+├── requirements.txt
+├── .env
+├── docker-compose.yml
+└── README.md
+
+this is my project architecture .
+
+so now generated me ui in a new folder called frontend for all the apis , 
+
+for companies ill have data somethihng like "companies": [
+    {
+      "name": "Amazon",
+      "problem_count": 500,
+      "avg_frequency": 53.82,
+      "easy_count": 104,
+      "medium_count": 310,
+      "hard_count": 86,
+      "difficulty_distribution": {
+        "easy": 104,
+        "medium": 310,
+        "hard": 86
+      },
+      "most_common_topics": [
+        "Array",
+        "String",
+        "Dynamic Programming",
+        "Hash Table",
+        "Math"
+      ],
+      "average_acceptance_rate": 0.5415,
+      "problems": null
+    },
+    {
+      "name": "Google",
+      "problem_count": 500,
+      "avg_frequency": 40.88,
+      "easy_count": 140,
+      "medium_count": 265,
+      "hard_count": 95,
+      "difficulty_distribution": {
+        "easy": 140,
+        "medium": 265,
+        "hard": 95
+      },
+      "most_common_topics": [
+        "Array",
+        "String",
+        "Hash Table",
+        "Dynamic Programming",
+        "Two Pointers"
+      ],
+      "average_acceptance_rate": 0.5539,
+      "problems": null
+    },
+    {
+      "name": "Meta",
+      "problem_count": 500,
+      "avg_frequency": 50.23,
+      "easy_count": 118,
+      "medium_count": 309,
+      "hard_count": 73,
+      "difficulty_distribution": {
+        "easy": 118,
+        "medium": 309,
+        "hard": 73
+      },
+
+for queries ill have data somethihng like 
+
+ "results": [
+    {
+      "question_number": 4369775,
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "hard",
+      "frequency": 100,
+      "acceptance_rate": 0.4737771497127021,
+      "link": "https://leetcode.com/problems/largest-rectangle-in-histogram",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "companies": [
+        "Zynga"
+      ]
+    },
+    {
+      "question_number": 4369775,
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "hard",
+      "frequency": 100,
+      "acceptance_rate": 0.4737771497127021,
+      "link": "https://leetcode.com/problems/largest-rectangle-in-histogram",
+      "topics": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "companies": [
+        "Zynga"
+      ]
+    },
+    {
+      "question_number": 6765932,
+      "title": "Maximum Strong Pair XOR II",
+      "difficulty": "hard",
+      "frequency": 100,
+      "acceptance_rate": 0.3074288510152491,
+      "link": "https://leetcode.com/problems/maximum-strong-pair-xor-ii",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Trie",
+        "Sliding Window"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+    },
+    {
+      "question_number": 9026891,
+      "title": "Maximum Strong Pair XOR I",
+      "difficulty": "easy",
+      "frequency": 100,
+      "acceptance_rate": 0.7484073520894932,
+      "link": "https://leetcode.com/problems/maximum-strong-pair-xor-i",
+      "topics": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Trie",
+        "Sliding Window"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+    },
+    {
+      "question_number": 5925895,
+      "title": "Apply Operations to Make Sum of Array Greater Than or Equal to k",
+      "difficulty": "medium",
+      "frequency": 100,
+      "acceptance_rate": 0.4338245855956792,
+      "link": "https://leetcode.com/problems/apply-operations-to-make-sum-of-array-greater-than-or-equal-to-k",
+      "topics": [
+        "Math",
+        "Greedy",
+        "Enumeration"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+    },
+    {
+      "question_number": 7038956,
+      "title": "Day of the Year",
+      "difficulty": "easy",
+      "frequency": 100,
+      "acceptance_rate": 0.4818085939668305,
+      "link": "https://leetcode.com/problems/day-of-the-year",
+      "topics": [
+        "Math",
+        "String"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+    },
+    {
+      "question_number": 7721575,
+      "title": "Largest Number After Digit Swaps by Parity",
+      "difficulty": "easy",
+      "frequency": 100,
+      "acceptance_rate": 0.637345576330206,
+      "link": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity",
+      "topics": [
+        "Sorting",
+        "Heap (Priority Queue)"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+    },
+    {
+      "question_number": 8875234,
+      "title": "Optimal Account Balancing",
+      "difficulty": "hard",
+      "frequency": 100,
+      "acceptance_rate": 0.4993834011592058,
+      "link": "https://leetcode.com/problems/optimal-account-balancing",
+      "topics": [
+        "Array",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bit Manipulation",
+        "Bitmask"
+      ],
+      "companies": [
+        "ZScaler"
+      ]
+
+need a clean ui , use frameworks which ever you want but lines of code should be less , create a new frontend folder add all u rui code there , ui shoul look clean colourful , smooth just like real world , also first give me data which i have given you neat so that next time ill directly paste to get the ui , 
+
+also generate file by file .
+
+use new tech stack which is useful also say me what u are using and y

@@ -1,0 +1,69 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Luvable1196 - Backend Engineer</title> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.
+
+pasted
+
+in this i cannot see the text in my project , text is not comming , also change the font style make it to something beautful used 
+in live websites
+
+I can see the issue with your portfolio. The text visibility problem is likely due to missing CSS styling, and I'll help you create a beautiful, modern design with a professional font stack used in live websites.
+
+
+Luvable1196 - Modern Portfolio
+Interactive artifact 
+
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│                        CLIENT LAYER                             │
+├─────────────────────────────────────────────────────────────────┤
+│ React Frontend (Port 3000)                                     │
+│ ├── Query Input Interface                                       │
+│ ├── Results Visualization                                       │
+│ └── Real-time WebSocket Updates                                 │
+└─────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼ HTTP/WebSocket
+┌─────────────────────────────────────────────────────────────────┐
+│                      API GATEWAY LAYER                         │
+├─────────────────────────────────────────────────────────────────┤
+│ FastAPI Backend (Port 8000)                                    │
+│ ├── /api/query (POST) - Main query endpoint                    │
+│ ├── /api/companies (GET) - List companies                      │
+│ ├── /api/health (GET) - Health check                           │
+│ └── /ws/query - WebSocket for real-time updates                │
+└─────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     PROCESSING LAYER                           │
+├─────────────────────────────────────────────────────────────────┤
+│ ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐ │
+│ │   NLP ENGINE    │  │  CACHE LAYER    │  │ DATABASE ENGINE │ │
+│ │                 │  │                 │  │                 │ │
+│ │ • Query Parser  │  │ • Redis Cache   │  │ • DuckDB Engine │ │
+│ │ • Intent Recog  │  │ • Query Cache   │  │ • SQL Execution │ │
+│ │ • SQL Generator │  │ • Result Cache  │  │ • Query Optimizer│ │
+│ │ • Validation    │  │ • Session Cache │  │ • Analytics     │ │
+│ └─────────────────┘  └─────────────────┘  └─────────────────┘ │
+└─────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                      DATA LAYER                                │
+├─────────────────────────────────────────────────────────────────┤
+│ File System Storage                                             │
+│ /data/                                                          │
+│ ├── Amazon/                                                     │
+│ │   ├── last1month.csv                                          │
+│ │   ├── last6months.csv                                         │
+│ │   └── last1year.csv                                           │
+│ ├── Google/                                                     │
+│ ├── Microsoft/                                                  │
+│ └── [100+ companies...]                                         │
+└─────────────────────────────────────────────────────────────────┘
+
+Difficulty Title Frequency Acceptance Rate Link Topics EASY Reverse Linked List 100 0.792066 https://leetcode.com/problems/reverse-linked-list Linked List, Recursion EASY Merge Sorted Array 88.5 0.529196 https://leetcode.com/problems/merge-sorted-array Array, Two Pointers, Sorting MEDIUM Remove Nth Node From End of List 88.5 0.489611 https://leetcode.com/problems/remove-nth-node-from-end-of-list Linked List, Two Pointers EASY Majority Element 88.5 0.657403 https://leetcode.com/problems/majority-element Array, Hash Table, Divide and Conquer, Sorting, Counting MEDIUM Count the Number of Fair Pairs 88.5 0.529164 https://leetcode.com/problems/count-the-number-of-fair-pairs Array, Two Pointers, Binary Search, Sorting HARD Trapping Rain Water 88.5 0.65102 https://leetcode.com/problems/trapping-rain-water Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
+
+so create a defined folder structure where ill have /api and all baclend code , /data i have all the excel files as depocted , in /db ill have all the database models , ill use duck db since its fast on querying in metrics , give me file by file code , i wsnt to fastapi for the backend 
+
+the query ill enter will be like give me easy array questions , so now  give me the most repeated array questions with question numnber leetcode link , along with array what ther techniques used , companies its asked in end to end project , lets start with backend and ui logic first then at last well handle the ui
