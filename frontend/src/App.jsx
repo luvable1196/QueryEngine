@@ -8,6 +8,7 @@ import CompaniesSection from './components/CompaniesSection';
 import CompanyResults from './components/CompanyResults';
 import StatsSection from './components/StatsSection';
 import LoadingSection from './components/LoadingSection';
+import ProblemResults from './components/ProblemResults';
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState('search');
@@ -198,9 +199,10 @@ const App = () => {
       
       case 'results':
         return (
-          <ResultsSection
+          <ProblemResults
             results={searchResults}
-            searchTerm={currentSearchTerm}
+            isLoading={isLoading}
+            searchQuery={currentSearchTerm}
             onBackToSearch={handleBackToSearch}
             onViewCompanies={handleViewCompanies}
           />
